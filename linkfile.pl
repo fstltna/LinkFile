@@ -2,9 +2,7 @@
 # LinkFile.pl - Download latest version at https://marisa-apps.retro-os.live
 
 use 5.012;		# so readdir assigns to $_ in a lone while test
-use String::Scanf;	# imports sscanf()
 use Cwd qw(cwd);	# Load in cwd command
-use Storable;		# For loading & saving variables
 
 # Globals
 my $PHPBB_DATA="/var/www/html/phpBB3/files/dlext/downloads";	# The directory the other file dirs live under
