@@ -91,7 +91,13 @@ if (!-d $DEST_DIR)
 
 $SOURCE_DIR = cwd;
 
-print "Working on '$CUR_FILE': ";
+print "Working on '$CUR_FILE':\n";
+if (! -f $CUR_FILE)
+{
+	print "File $CUR_FILE does not exist.\n";
+	exit 0;
+}
+
 &LinkFile();
 
 exit 0;
