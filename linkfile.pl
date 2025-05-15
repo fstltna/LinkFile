@@ -13,8 +13,6 @@ my $VERSION="1.0.0";
 # Init vars - don't change anything below here
 my $DEST_DIR="";
 my $CUR_FILE="";
-my $FIRST_PART="";
-my $DEST_TYPE="";
 my $BBS_DIR="";
 my $SOURCE_DIR="";
 
@@ -43,10 +41,6 @@ sub LinkFile
 	my $dest_file;
 	my $str;
 	my $i = rindex($CUR_FILE, ".");
-	$FIRST_PART = substr($CUR_FILE, 0, $i);
-	$DEST_TYPE = substr($CUR_FILE, $i+1);
-	#print "first_Part: $FIRST_PART\n";
-	#print "Extension: $DEST_TYPE\n";
 	$dest_file = $CUR_FILE;
 	$dest_file =~ s/ /_/g;
 	if (-f "$DEST_DIR/$dest_file")
