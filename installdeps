@@ -1,0 +1,5 @@
+#!/bin/bash
+cpan -i String::Scanf
+cpan -i Cwd qw(cwd)
+cpan -i Storable
+exit 0
