@@ -7,4 +7,4 @@ Requires the following Perl files:
 You can install these by running:
 	./installdeps
 
-Usage: linkfile.pl <FILE> <DOWNLOADDIR>
+Usage: linkfile.pl \<FILE\> \<DOWNLOADDIR\>
